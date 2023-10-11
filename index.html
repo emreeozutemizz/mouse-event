@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Takip</title>
+</head>
+<body>
+    <div id="takip" ><img src="image.jpg" width="25" height="25" style="border:none"/></div>
+    <script>
+        var alan = document.getElementById("takip");
+        alan.style.position = "absolute";
+        window.onmousemove = function(event){
+            alan.style.left = event.clientX + 15 + "px";
+            alan.style.top = event.clientY  + "px";
+        }
+        
+    </script>
+</body>
+</html>
